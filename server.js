@@ -62,4 +62,8 @@ app.post("/identify-food", async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {  // Add this root route handler
+    res.send("Welcome to the Calorie Estimator Backend!"); 
+});
+
 app.listen(5000, () => console.log("Server running on port 5000"));
