@@ -4,7 +4,7 @@ const axios = require("axios");
 const app = express();
 
 // Improved CORS Configuration:
-const allowedOrigins = ['http://localhost:8000', 'null']; // Add other origins if needed
+const allowedOrigins = ['http://localhost:8000', 'null' 'https://calorie-estimator-frontend.netlify.app/']; // Add other origins if needed
 
 app.use(cors({
     origin: function (origin, callback) {
